@@ -56,7 +56,7 @@ class mycalculator:
 
       self.root.mainloop()
     
-    def action_02(self, event):
+    def trigger_event(self, event):
      self.display.set("-")
      print(event)
 
