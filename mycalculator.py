@@ -52,5 +52,13 @@ class mycalculator:
 
 
       self.root.mainloop()
+    
+    def trigger_event(self, event):
+        print(event)
+        self.title = "Test"
+        self.root.title(self.title)
+        self.label_text.set("DIP 02")
+        self.label.pack()
+
 
 mycalculator()
