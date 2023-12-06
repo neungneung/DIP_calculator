@@ -4,13 +4,12 @@ class mycalculator:
     def __init__(self):
 
       self.root = tk.Tk()
-      self.label_text = tk.StringVar()
-      self.Label_text.set("Hello DIP01")
-
+      self.display = tk.StringVar()
+    
       self.root.geometry ("300x370")
       self.root.title("mycalculator")
 
-      self.label = tk.Label(self.root, text="hello world!", font=('Arial', 18)) 
+      self.label = tk.Label(self.root, textvariable=self.display, font=('Arial', 18)) 
       self.label.pack()
 
       self.button = tk.Button(self.root, text="AC", height=3, width=7)
@@ -41,6 +40,7 @@ class mycalculator:
       self.button.place(x=150, y=230)
       self.button = tk.Button(self.root, text=".", height=3, width=7)
       self.button.place(x=150, y=290)
+      self.button.bind("<Button-1>", self.action_05)
       self.button = tk.Button(self.root, text="/", height=3, width=7)
       self.button.place(x=215, y=50)
       self.button = tk.Button(self.root, text="*", height=3, width=7)
@@ -54,5 +54,9 @@ class mycalculator:
 
 
       self.root.mainloop()
+
+    def action_05(self, event):
+     self.display.set(".")
+     print(event)    
 
 mycalculator()
