@@ -5,7 +5,7 @@ class mycalculator:
 
       self.root = tk.Tk()
       self.label_text = tk.StringVar()
-      self.Label_text.set("Hello DIP01")
+      self.label_text.set("Hello DIP01")
 
       self.root.geometry ("300x370")
       self.root.title("mycalculator")
