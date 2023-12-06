@@ -45,6 +45,7 @@ class mycalculator:
       self.button.place(x=215, y=50)
       self.button = tk.Button(self.root, text="*", height=3, width=7)
       self.button.place(x=215, y=110)
+      self.button.bind("<Button-1>", self.action_03)
       self.button = tk.Button(self.root, text="-", height=3, width=7)
       self.button.place(x=215, y=170)
       self.button.bind("<Button-1>", self.action_02)
@@ -63,5 +64,9 @@ class mycalculator:
      self.display.set("0")
      print(event)
 
+
+    def action_03(self, event):
+      self.display.set("*")
+      print(event)
 
 mycalculator()
