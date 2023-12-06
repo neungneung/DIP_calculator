@@ -60,7 +60,7 @@ class mycalculator:
      self.display.set("-")
      print(event)
     def action_06(self, event):
-     self.display.set("AC")
+     self.display.set("0")
      print(event)
 
 
