@@ -5,6 +5,7 @@ class mycalculator:
 
       self.root = tk.Tk()
 <<<<<<< HEAD
+<<<<<<< HEAD
       self.display = tk.StringVar()
 =======
       self.label_text = tk.StringVar()
@@ -19,6 +20,15 @@ class mycalculator:
 =======
       self.label = tk.Label(self.root, textvariable=self.display, font=('Arial', 18))
 >>>>>>> fea
+=======
+      self.label_text = tk.StringVar()
+      self.label_text.set("mycalculartor")
+  
+      self.root.geometry ("300x300")
+      self.root.title("mycalculator")
+
+      self.label = tk.Label(self.root, textvariable=self.display, font=('Arial', 18)) 
+>>>>>>> origin/feature/add--
       self.label.pack()
 
       self.button = tk.Button(self.root, text="AC", height=3, width=7)
@@ -50,14 +60,23 @@ class mycalculator:
       self.button = tk.Button(self.root, text=".", height=3, width=7)
       self.button.place(x=150, y=290)
       self.button = tk.Button(self.root, text="/", height=3, width=7)
+<<<<<<< HEAD
       self.button.place(x=215, y=50)
       self.button = tk.Button(self.root, text="*", height=3, width=7)
       self.button.place(x=215, y=110)
       self.button.bind("<Button-1>", self.action_03)
+=======
+      self.button.bind('<Button-1>', self.action_04)
+
+      self.button.place(x=215, y=50)
+      self.button = tk.Button(self.root, text="*", height=3, width=7)
+      self.button.place(x=215, y=110)
+>>>>>>> origin/feature/add--
       self.button = tk.Button(self.root, text="-", height=3, width=7)
       self.button.place(x=215, y=170)
       self.button = tk.Button(self.root, text="+", height=3, width=7)
       self.button.place(x=215, y=230)
+<<<<<<< HEAD
       self.button.bind('<Button-1>',self.action_01)
       
       self.button = tk.Button(self.root, text="=", height=3, width=7)
@@ -82,4 +101,15 @@ class mycalculator:
        
 
 >>>>>>> fea
+=======
+      self.button = tk.Button(self.root, text="=", height=3, width=7)
+      self.button.place(x=215, y=290)
+      self.root.mainloop()
+
+    def action_04(self, event):
+       self.display.set("/")
+       print(event)
+     
+
+>>>>>>> origin/feature/add--
 mycalculator()
