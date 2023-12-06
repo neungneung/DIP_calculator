@@ -52,5 +52,5 @@ class mycalculator:
 
 
       self.root.mainloop()
-
+      
 mycalculator()
