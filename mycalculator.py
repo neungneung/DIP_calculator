@@ -59,5 +59,8 @@ class mycalculator:
       self.display.set("*")
       print(event)
 
+<<<<<<< HEAD
 
+=======
+>>>>>>> feature/add
 mycalculator()
