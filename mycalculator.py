@@ -6,12 +6,6 @@ class mycalculator:
       self.root = tk.Tk()
       self.display = tk.StringVar()
 
-      self.root.geometry ("300x380")
-    
-      self.root.geometry ("300x370")
-
-      self.root.title("mycalculator")
-
       self.root.geometry ("300x370")
       self.root.title(mycalculator)
 
