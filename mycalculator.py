@@ -5,8 +5,13 @@ class mycalculator:
 
       self.root = tk.Tk()
       self.display = tk.StringVar()
+<<<<<<< HEAD
 
       self.root.geometry ("300x380")
+=======
+    
+      self.root.geometry ("300x370")
+>>>>>>> dev/feature/dot
       self.root.title("mycalculator")
 
       self.label = tk.Label(self.root, textvariable=self.display, font=('Arial', 18)) 
@@ -50,6 +55,7 @@ class mycalculator:
       self.button.bind("<Button-1>", self.action_3)
       self.button = tk.Button(self.root, text=".", height=3, width=7)
       self.button.place(x=150, y=290)
+      self.button.bind("<Button-1>", self.action_05)
       self.button = tk.Button(self.root, text="/", height=3, width=7)
       self.button.place(x=215, y=50)
       self.button = tk.Button(self.root, text="*", height=3, width=7)
@@ -100,5 +106,9 @@ class mycalculator:
       self.display.set("9")
       print(event)
       
+
+    def action_05(self, event):
+     self.display.set(".")
+     print(event)    
 
 mycalculator()
