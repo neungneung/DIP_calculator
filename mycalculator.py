@@ -113,7 +113,7 @@ class mycalculator:
       print(event)
 
     def action_01(self, event):
-      self.display.self("+")
+      self.display.set("+")
       print(event)
     def action_04(self, event):
       self.display.set("/")
