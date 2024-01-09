@@ -10,7 +10,6 @@ class mycalculator:
 
       self.label = tk.Label(self.root, text="hello world!", font=('Arial', 18)) 
       self.label.pack()
-<<<<<<< HEAD
 
       self.button = tk.Button(self.root, text="AC", height=3, width=7)
       self.button.place(x=20, y=50)
@@ -54,7 +53,6 @@ class mycalculator:
 
       self.root.mainloop()
       
-=======
 
       self.button = tk.Button(self.root, text="AC", height=3, width=7)
       self.button.place(x=20, y=50)
@@ -98,7 +96,4 @@ class mycalculator:
 
       self.root.mainloop()
 
-mycalculator()
-
->>>>>>> origin/feature/add--
 mycalculator()
