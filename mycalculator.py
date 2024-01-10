@@ -76,7 +76,6 @@ class mycalculator:
 
       self.root.mainloop()
 
-
     def action_03(self, event):
       self.display.set("*")
       self.c()
@@ -84,88 +83,48 @@ class mycalculator:
       self.number_last = self.number_now
       self.display.set(str(self.number_now))
       self.number_now = 0
+      print(event)
     
     def action_00(self, event):
-      self.on_click('=')
+      self.c()
+      self.display.set(str(self.number_now))
       print(event)
-      
-    def action_0(self, event):
-      self.display.set("0")
+
+      def action_0(self, event):
+       self.c()
+      self.number_now = self.number_now * 10
+      self.number_now = self.number_now + 0
+      self.display.set(str(self.number_now))
       print(event)
-    def c(self):
-      if self.operator == " ": return
-      self.number_now = eval(str(self.number_now) + self.operator + str(self.number_last))
+    
 
 
     def action_1(self, event):
-      self.display.set("1")
+      self.number_now = self.number_now * 10
+      self.number_now = self.number_now + 1
+      self.display.set(str(self.number_now))
       print(event)
-    def c(self):
-      if self.operator == " ": return
-      self.number_now = eval(str(self.number_now) + self.operator + str(self.number_last))
+    
 
     def action_2(self, event):
-      self.display.set("2")
+      self.number_now = self.number_now * 10
+      self.number_now = self.number_now + 2
+      self.display.set(str(self.number_now))
       print(event)
-    def c(self):
-      if self.operator == " ": return
-      self.number_now = eval(str(self.number_now) + self.operator + str(self.number_last))
+    
 
     def action_3(self, event):
-      self.display.set("3")
+      self.number_now = self.number_now * 10
+      self.number_now = self.number_now + 3
+      self.display.set(str(self.number_now))
       print(event)
-    def c(self):
-      if self.operator == " ": return
-      self.number_now = eval(str(self.number_now) + self.operator + str(self.number_last))
+   
 
     def action_4(self, event):
-      self.display.set("4")
-      print(event)
-    def c(self):
-      if self.operator == " ": return
-      self.number_now = eval(str(self.number_now) + self.operator + str(self.number_last))
-
-    def action_5(self, event):
-      self.display.set("5")
-      print(event)
-    def c(self):
-      if self.operator == " ": return
-      self.number_now = eval(str(self.number_now) + self.operator + str(self.number_last))
-
-    def action_6(self, event):
-      self.display.set("6")
-      print(event)
-    def c(self):
-      if self.operator == " ": return
-      self.number_now = eval(str(self.number_now) + self.operator + str(self.number_last))
-
-    def action_7(self, event):
-      self.display.set("7")
-      print(event)
-    def c(self):
-      if self.operator == " ": return
-      self.number_now = eval(str(self.number_now) + self.operator + str(self.number_last))
-
-    def action_8(self, event):
-      self.display.set("8")
-      print(event)
-    def c(self):
-      if self.operator == " ": return
-      self.number_now = eval(str(self.number_now) + self.operator + str(self.number_last))
-
-    def action_9(self, event):
-      self.display.set("9")
-      print(event)
-    def c(self):
-      if self.operator == " ":
-        return
-      self.number_now = eval(str(self.number_now) + self.operator + str(self.number_last))
-
-    def action_01(self, event):
-      self.c()
-      self.operator = "+"
-      self.number_last = self.number_now
+      self.number_now = self.number_now * 10
+      self.number_now = self.number_now + 4
       self.display.set(str(self.number_now))
+<<<<<<< HEAD
       self.number_now = 0
       
     def action_04(self, event):
@@ -209,3 +168,6 @@ class mycalculator:
         
         
 mycalculator()
+=======
+      print(event)
+>>>>>>> PIN-0-4
