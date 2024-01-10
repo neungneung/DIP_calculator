@@ -108,4 +108,6 @@ class mycalculator:
     def action_00(self, event):
       self.c()
       self.display.set(str(self.number_now))
-      print(event)   
+      print(event)
+
+  mycalculator()
