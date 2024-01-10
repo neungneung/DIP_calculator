@@ -184,15 +184,27 @@ class mycalculator:
       
     def action_05(self, event):
       self.display.set(".")
+      self.number_now = eval(str(self.number_now) + ".")
+      self.display.set(str(self.number_now))
       print(event)
+
     def action_06(self, event):
-      self.display.set(" ")
+      self.number_now = 0
+      self.number_last = 0
+      self.operator = ""
+      self.display.set("0")
       print(event)
+
     def action_07(self, event):
       self.display.set("+/-")
+      self.number_now = -self.number_now
+      self.display.set(str(self.number_now))
       print(event)
+
     def action_08(self, event):
       self.display.set("%")
+      self.number_now = self.number_now/100
+      self.display.set(str(self.number_now))
       print(event)
         
         
