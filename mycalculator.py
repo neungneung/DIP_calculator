@@ -88,4 +88,40 @@ class mycalculator:
     def action_00(self, event):
       self.c()
       self.display.set(str(self.number_now))
-      print(event)   
+      print(event)
+
+      def action_0(self, event):
+       self.c()
+      self.number_now = self.number_now * 10
+      self.number_now = self.number_now + 0
+      self.display.set(str(self.number_now))
+      print(event)
+    
+
+
+    def action_1(self, event):
+      self.number_now = self.number_now * 10
+      self.number_now = self.number_now + 1
+      self.display.set(str(self.number_now))
+      print(event)
+    
+
+    def action_2(self, event):
+      self.number_now = self.number_now * 10
+      self.number_now = self.number_now + 2
+      self.display.set(str(self.number_now))
+      print(event)
+    
+
+    def action_3(self, event):
+      self.number_now = self.number_now * 10
+      self.number_now = self.number_now + 3
+      self.display.set(str(self.number_now))
+      print(event)
+   
+
+    def action_4(self, event):
+      self.number_now = self.number_now * 10
+      self.number_now = self.number_now + 4
+      self.display.set(str(self.number_now))
+      print(event)
