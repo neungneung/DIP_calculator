@@ -13,7 +13,7 @@ class mycalculator:
       self.root.configure(bg="lavender")
       self.root.title("mycalculator")
 
-      self.label = tk.Label(self.root, textvariable=self.display, font=('Arial', 18), bg='thistle') 
+      self.label = tk.Label(self.root, textvariable=self.display, font=('Cascadia Mono', 18), bg='thistle') 
       self.label.pack()
 
       self.button = tk.Button(self.root, text="AC", height=3, width=7, bg="ivory")
