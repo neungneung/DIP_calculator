@@ -61,13 +61,8 @@ class mycalculator:
       self.button.bind("<Button-1>", self.action_05)
       self.button = tk.Button(self.root, text="/", height=3, width=7, bg="ivory")
       self.button.place(x=215, y=50)
-<<<<<<< HEAD
       self.button.bind("<Button-1>", self.action_04)
       self.button = tk.Button(self.root, text="*", height=3, width=7, bg="ivory")
-=======
-      self.button.bind('<Button-1>',self.action_04)
-      self.button = tk.Button(self.root, text="*", height=3, width=7)
->>>>>>> origin/fea
       self.button.place(x=215, y=110)
       self.button.bind("<Button-1>", self.action_03)
       self.button = tk.Button(self.root, text="-", height=3, width=7, bg="ivory")
