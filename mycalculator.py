@@ -1,3 +1,4 @@
+
 import tkinter as tk
 
 class mycalculator:
@@ -78,7 +79,6 @@ class mycalculator:
       self.root.mainloop()
  
     def action_0(self, event):
-      self.c()
       self.number_now = self.number_now * 10
       self.number_now = self.number_now + 0
       self.display.set(str(self.number_now))
