@@ -60,7 +60,6 @@ class mycalculator:
       self.button.bind("<Button-1>", self.action_05)
       self.button = tk.Button(self.root, text="/", height=3, width=7, bg="ivory")
       self.button.place(x=215, y=50)
-      self.button.bind('<Button-1>',self.action_04)
       self.button = tk.Button(self.root, text="*", height=3, width=7)
       self.button.place(x=215, y=110)
       self.button.bind("<Button-1>", self.action_03)
@@ -151,7 +150,7 @@ class mycalculator:
       self.c()
       self.display.set(str(self.number_now))
       print(event)
-      
+
     def action_01(self, event):
       self.c()
       self.operator = "+"
@@ -161,12 +160,12 @@ class mycalculator:
       print(event)
 
     def action_02(self, event):
-       self.c()
-       self.operator = "-"
-       self.number_last = self.number_now
-       self.display.set(str(self.number_now))
-       self.number_now = 0
-       print(event)
+      self.c()
+      self.operator = "-"
+      self.number_last = self.number_now
+      self.display.set(str(self.number_now))
+      self.number_now = 0
+      print(event)
 
     def action_03(self, event):
       self.display.set("*")
@@ -175,92 +174,8 @@ class mycalculator:
       self.number_last = self.number_now
       self.display.set(str(self.number_now))
       self.number_now = 0
-      print(event)  
+      print(event) 
 
-    def action_00(self, event):
-      self.c()
-      self.display.set(str(self.number_now))
-      print(event)
-      
-    def action_0(self, event):
-      self.c()
-      self.number_now = self.number_now * 10
-      self.number_now = self.number_now + 0
-      self.display.set(str(self.number_now))
-      print(event)
-    
-
-
-    def action_1(self, event):
-      self.number_now = self.number_now * 10
-      self.number_now = self.number_now + 1
-      self.display.set(str(self.number_now))
-      print(event)
-    
-
-    def action_2(self, event):
-      self.number_now = self.number_now * 10
-      self.number_now = self.number_now + 2
-      self.display.set(str(self.number_now))
-      print(event)
-    
-
-    def action_3(self, event):
-      self.number_now = self.number_now * 10
-      self.number_now = self.number_now + 3
-      self.display.set(str(self.number_now))
-      print(event)
-   
-
-    def action_4(self, event):
-      self.number_now = self.number_now * 10
-      self.number_now = self.number_now + 4
-      self.display.set(str(self.number_now))
-      print(event)
-    
-    def action_5(self, event):
-      self.number_now = self.number_now * 10
-      self.number_now = self.number_now + 5
-      self.display.set(str(self.number_now))
-      print(event)
-   
-    def action_6(self, event):
-      self.number_now = self.number_now * 10
-      self.number_now = self.number_now + 6
-      self.display.set(str(self.number_now))
-      print(event)
-   
-
-    def action_7(self, event):
-      self.number_now = self.number_now * 10
-      self.number_now = self.number_now + 7
-      self.display.set(str(self.number_now))
-      print(event)
-    
-
-    def action_8(self, event):
-      self.number_now = self.number_now * 10
-      self.number_now = self.number_now + 8
-      self.display.set(str(self.number_now))
-      print(event)
-    
-    def action_9(self, event):
-      self.number_now = self.number_now * 10
-      self.number_now = self.number_now + 9
-      self.display.set(str(self.number_now))
-      print(event)
-    def c(self):
-      if self.operator == "": return
-      self.number_now = eval("self.number_last"+ self.operator + "self.number_now")
-
-    def action_01(self, event):
-      self.c()
-      self.operator = "+"
-      self.number_last = self.number_now
-      self.display.set(str(self.number_now))
-      self.number_now = 0
-      print(event)
-      
     def action_04(self, event):
       self.c()
       self.operator = "/"
@@ -268,15 +183,7 @@ class mycalculator:
       self.display.set(str(self.number_now))
       self.number_now = 0
       print(event)
-      
-    def action_02(self, event):
-      self.c()
-      self.operator = "-"
-      self.number_last = self.number_now
-      self.display.set(str(self.number_now))
-      self.number_now = 0
-      print(event)
-      
+
     def action_05(self, event):
       self.display.set(".")
       self.number_now = eval(str(self.number_now) + ".")
