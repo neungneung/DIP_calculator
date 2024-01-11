@@ -8,7 +8,6 @@ class mycalculator:
       
       self.root = tk.Tk()
       self.display = tk.StringVar()
-<<<<<<< HEAD
 
       self.root.geometry ("300x370")
       self.root.configure(bg="lavender")
@@ -16,10 +15,6 @@ class mycalculator:
 
       self.label = tk.Label(self.root, textvariable=self.display, font=('Arial', 18), bg='thistle') 
       self.label.pack()
-
-      
-=======
-      
 
       self.root.geometry ("300x370")
       self.root.configure(bg="lavender")
