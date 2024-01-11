@@ -46,7 +46,6 @@ class mycalculator:
       self.button.place(x=150, y=290)
       self.button = tk.Button(self.root, text="/", height=3, width=7)
       self.button.place(x=215, y=50)
-      self.button.bind('<Button-1>',self.action_04)
       self.button = tk.Button(self.root, text="*", height=3, width=7)
       self.button.place(x=215, y=110)
       self.button = tk.Button(self.root, text="-", height=3, width=7)
@@ -82,13 +81,6 @@ class mycalculator:
        self.number_now = 0
        print(event)
        
-    def action_04(self, event):
-      self.c()
-      self.operator = "/"
-      self.number_last = self.number_now
-      self.display.set(str(self.number_now))
-      self.number_now = 0
-      print(event)
        
 
 mycalculator()
