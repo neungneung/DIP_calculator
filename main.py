@@ -143,11 +143,6 @@ class mycalculator:
       self.number_now = eval("self.number_last"+ self.operator + "self.number_now")def action_03(self, event):
       self.display.set("*")
       self.c()
-      self.operator = "*"
-      self.number_last = self.number_now
-      self.display.set(str(self.number_now))
-      self.number_now = 0
-      print(event)
 
     def action_05(self, event):
       self.display.set(".")
