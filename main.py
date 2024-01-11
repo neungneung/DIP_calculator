@@ -156,7 +156,6 @@ class mycalculator:
       self.number_now = 0
       print(event)
     
-    
     def action_05(self, event):
       self.display.set(".")
       self.number_now = eval(str(self.number_now) + ".")
@@ -184,5 +183,3 @@ class mycalculator:
 
 
 mycalculator()
-
-    
