@@ -61,8 +61,13 @@ class mycalculator:
       self.button.bind("<Button-1>", self.action_05)
       self.button = tk.Button(self.root, text="/", height=3, width=7, bg="ivory")
       self.button.place(x=215, y=50)
+<<<<<<< HEAD
       self.button.bind("<Button-1>", self.action_04)
       self.button = tk.Button(self.root, text="*", height=3, width=7, bg="ivory")
+=======
+      self.button.bind('<Button-1>',self.action_04)
+      self.button = tk.Button(self.root, text="*", height=3, width=7)
+>>>>>>> origin/fea
       self.button.place(x=215, y=110)
       self.button.bind("<Button-1>", self.action_03)
       self.button = tk.Button(self.root, text="-", height=3, width=7, bg="ivory")
@@ -182,18 +187,35 @@ class mycalculator:
       print(event)
       
     def action_02(self, event):
+<<<<<<< HEAD
       self.c()
       self.operator = "-"
+=======
+       self.c()
+       self.operator = "-"
+       self.number_last = self.number_now
+       self.display.set(str(self.number_now))
+       self.number_now = 0
+       print(event)
+       
+    def action_04(self, event):
+      self.c()
+      self.operator = "/"
+>>>>>>> origin/fea
       self.number_last = self.number_now
       self.display.set(str(self.number_now))
       self.number_now = 0
       print(event)
+<<<<<<< HEAD
       
     def action_05(self, event):
       self.display.set(".")
       self.number_now = eval(str(self.number_now) + ".")
       self.display.set(str(self.number_now))
       print(event)
+=======
+       
+>>>>>>> origin/fea
 
     def action_06(self, event):
       self.number_now = 0
