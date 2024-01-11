@@ -140,9 +140,8 @@ class mycalculator:
 
     def c(self):
       if self.operator == "": return
-      self.number_now = eval("self.number_last"+ self.operator + "self.number_now")def action_03(self, event):
-      self.display.set("*")
-      self.c()
+      self.number_now = eval("self.number_last"+ self.operator + "self.number_now")
+
 
     def action_05(self, event):
       self.display.set(".")
