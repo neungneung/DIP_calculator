@@ -81,11 +81,16 @@ class mycalculator:
       self.button.bind("<Button-1>", self.action_00)
 
 
+<<<<<<< HEAD
 
       self.root.mainloop()
       
 
     def action_03(self, event):
+=======
+      self.root.mainloop()
+          def action_03(self, event):
+>>>>>>> origin/final-calculator
       self.display.set("*")
       self.c()
       self.operator = "*"
@@ -97,6 +102,7 @@ class mycalculator:
     def action_00(self, event):
       self.c()
       self.display.set(str(self.number_now))
+<<<<<<< HEAD
       print(event)
       
     def action_0(self, event):
@@ -238,3 +244,6 @@ class mycalculator:
         
         
 mycalculator()
+=======
+      print(event)
+>>>>>>> origin/final-calculator
