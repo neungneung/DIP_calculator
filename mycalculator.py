@@ -1,5 +1,4 @@
 import tkinter as tk
-from turtle import bgcolor
 
 class mycalculator:
     number_now = 0
