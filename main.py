@@ -164,4 +164,41 @@ class mycalculator:
       self.display.set(str(self.number_now))
       print(event)
 
+def action_5(self, event):
+      self.number_now = self.number_now * 10
+      self.number_now = self.number_now + 5
+      self.display.set(str(self.number_now))
+      print(event)
+   
+def action_6(self, event):
+      self.number_now = self.number_now * 10
+      self.number_now = self.number_now + 6
+      self.display.set(str(self.number_now))
+      print(event)
+   
+
+def action_7(self, event):
+      self.number_now = self.number_now * 10
+      self.number_now = self.number_now + 7
+      self.display.set(str(self.number_now))
+      print(event)
+    
+
+def action_8(self, event):
+      self.number_now = self.number_now * 10
+      self.number_now = self.number_now + 8
+      self.display.set(str(self.number_now))
+      print(event)
+    
+def action_9(self, event):
+      self.number_now = self.number_now * 10
+      self.number_now = self.number_now + 9
+      self.display.set(str(self.number_now))
+      print(event)
+def c(self):
+      if self.operator == "": return
+      self.number_now = eval("self.number_last"+ self.operator + "self.number_now")
+      
+
+
 mycalculator()
