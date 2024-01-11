@@ -61,8 +61,13 @@ class mycalculator:
       self.button.bind("<Button-1>", self.action_05)
       self.button = tk.Button(self.root, text="/", height=3, width=7, bg="ivory")
       self.button.place(x=215, y=50)
+<<<<<<< HEAD
       self.button.bind("<Button-1>", self.action_04)
       self.button = tk.Button(self.root, text="*", height=3, width=7, bg="ivory")
+=======
+      self.button.bind('<Button-1>',self.action_04)
+      self.button = tk.Button(self.root, text="*", height=3, width=7)
+>>>>>>> origin/first-fixed
       self.button.place(x=215, y=110)
       self.button.bind("<Button-1>", self.action_03)
       self.button = tk.Button(self.root, text="-", height=3, width=7, bg="ivory")
@@ -76,6 +81,7 @@ class mycalculator:
       self.button.bind("<Button-1>", self.action_00)
 
       self.root.mainloop()
+<<<<<<< HEAD
  
     def action_0(self, event):
       self.number_now = self.number_now * 10
@@ -88,6 +94,16 @@ class mycalculator:
       self.number_now = self.number_now + 1
       self.display.set(str(self.number_now))
       print(event)
+=======
+      
+    def action_04(self, event):
+       self.c()
+       self.operator = "/"
+       self.number_last = self.number_now
+       self.display.set(str(self.number_now))
+       self.number_now = 0
+       print(event)
+>>>>>>> origin/first-fixed
 
     def action_2(self, event):
       self.number_now = self.number_now * 10
