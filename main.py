@@ -77,5 +77,5 @@ class mycalculator:
        self.display.set(str(self.number_now))
        self.number_now = 0
        print(event)
-       
+
 mycalculator()
