@@ -1,6 +1,9 @@
 import tkinter as tk
 
 class mycalculator:
+    number_now = 0
+    number_last = 0
+    operator = ""
     def __init__(self):
 
       self.root = tk.Tk()
@@ -45,12 +48,34 @@ class mycalculator:
       self.button.place(x=215, y=110)
       self.button = tk.Button(self.root, text="-", height=3, width=7)
       self.button.place(x=215, y=170)
+      self.button.bind('<Button-1>',self.action_02)
       self.button = tk.Button(self.root, text="+", height=3, width=7)
       self.button.place(x=215, y=230)
+      self.button.bind('<Button-1>',self.action_01)
       self.button = tk.Button(self.root, text="=", height=3, width=7)
       self.button.place(x=215, y=290)
 
 
       self.root.mainloop()
       
+    def c(self):
+      if self.operator == "":return
+      self.number_now = eval("self.number_last"+self.operator+"self.number_now")
+
+    def action_01(self, event):
+       self.c()
+       self.operator = "+"
+       self.number_last = self.number_now
+       self.display.set(str(self.number_now))
+       self.number_now = 0
+       print(event)
+    
+    def action_02(self, event):
+       self.c()
+       self.operator = "-"
+       self.number_last = self.number_now
+       self.display.set(str(self.number_now))
+       self.number_now = 0
+       print(event)
+       
 mycalculator()
