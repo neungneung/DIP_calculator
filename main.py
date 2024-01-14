@@ -148,7 +148,6 @@ class mycalculator:
       print(event)
 
     def action_01(self, event):
-      self.display.set("+")
       self.c()
       self.operator = "+"
       self.number_last = self.number_now
@@ -157,7 +156,6 @@ class mycalculator:
       print(event)
     
     def action_02(self, event):
-      self.display.set("-")
       self.c()
       self.operator = "-"
       self.number_last = self.number_now
@@ -166,7 +164,6 @@ class mycalculator:
       print(event)
 
     def action_03(self, event):
-      self.display.set("*")
       self.c()
       self.operator = "*"
       self.number_last = self.number_now
@@ -175,7 +172,6 @@ class mycalculator:
       print(event)
 
     def action_04(self, event):
-      self.display.set("/")
       self.c()
       self.operator = "/"
       self.number_last = self.number_now
