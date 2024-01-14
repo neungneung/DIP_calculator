@@ -146,7 +146,9 @@ class mycalculator:
       self.c()
       self.display.set(str(self.number_now))
       print(event)
-      
+    
+    
+
     def action_03(self, event):
       self.display.set("*")
       self.c()
