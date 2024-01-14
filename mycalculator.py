@@ -168,7 +168,6 @@ class mycalculator:
       print(event)
 
     def action_03(self, event):
-      self.display.set("*")
       self.c()
       self.operator = "*"
       self.number_last = self.number_now
