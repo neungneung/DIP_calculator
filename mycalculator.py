@@ -87,14 +87,6 @@ class mycalculator:
       self.display.set(str(self.number_now))
       print(event)
       
-    def action_04(self, event):
-       self.c()
-       self.operator = "/"
-       self.number_last = self.number_now
-       self.display.set(str(self.number_now))
-       self.number_now = 0
-       print(event)
-
     def action_2(self, event):
       self.number_now = self.number_now * 10
       self.number_now = self.number_now + 2
@@ -173,15 +165,15 @@ class mycalculator:
       self.number_last = self.number_now
       self.display.set(str(self.number_now))
       self.number_now = 0
-      print(event) 
+      print(event)
 
     def action_04(self, event):
-      self.c()
-      self.operator = "/"
-      self.number_last = self.number_now
-      self.display.set(str(self.number_now))
-      self.number_now = 0
-      print(event)
+       self.c()
+       self.operator = "/"
+       self.number_last = self.number_now
+       self.display.set(str(self.number_now))
+       self.number_now = 0
+       print(event)
 
     def action_05(self, event):
       self.display.set(".")
